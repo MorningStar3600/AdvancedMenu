@@ -27,4 +27,4 @@ Menu mainMenu = new Menu(new[] {"Option 1", "Option 2"}, new Action[] {method1, 
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE.md file for details (coming soon:tm:)
+This project is licensed under the MIT License - see the LICENSE.md file for details
