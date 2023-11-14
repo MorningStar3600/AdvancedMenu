@@ -29,7 +29,7 @@ namespace MenuSystem
                 _fields[i] = fields[i];
                 _actions[i] = actions[i];
             }
-            _fields[fields.Length] = parent == null ? "Quitter" : "Retour";
+            _fields[fields.Length] = parent == null ? "Quit" : "Back";
             _actions[actions.Length] = Quit;
             _selectedField = 0;
             _parentMenu = parent;
@@ -53,7 +53,7 @@ namespace MenuSystem
             
             if (height < actualMenu._fields.Length*2 + 1)
             {
-                Console.WriteLine("La fenêtre est trop petite pour afficher le menu");
+                Console.WriteLine("The windows is too small to display the menu");
                 return;
             }
             
@@ -175,7 +175,7 @@ namespace MenuSystem
 
             if (!EventHandler.IsWaitingForCustomAction() && !actualMenu.IsOnMenu)
             {
-                Console.WriteLine("Appuyez sur une touche ou votre souris pour continuer...");
+                Console.WriteLine("Press a key or your mouse to continue...");
                 EventHandler.WaitForAction();
             }
             
@@ -222,12 +222,12 @@ namespace MenuSystem
             int centerX = Console.WindowWidth/2;
             int centerY = Console.WindowHeight/2;
             
-            string creator = "Projet réalisé par " + _projectCreator;
+            string creator = "A project by " + _projectCreator;
             
             Console.SetCursorPosition(centerX - creator.Length/2, centerY-1);
             Console.ForegroundColor = ConsoleColor.DarkGray;
             
-            Console.Write("Projet réalisé par ");
+            Console.Write("A project by ");
             Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine(_projectCreator);
             

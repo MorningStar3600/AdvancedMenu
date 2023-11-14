@@ -111,7 +111,7 @@ namespace MenuSystem
         public static void StopWaitingForCustomAction(bool waitForAction = true)
         {
             _isWaitingForCustomInput = false;
-            if (waitForAction) Console.WriteLine("Appuyez sur une touche ou votre souris pour continuer");
+            if (waitForAction) Console.WriteLine("Press a key or your mouse to continue...");
             if (waitForAction) WaitForAction();
             else
             {
