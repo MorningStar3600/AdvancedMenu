@@ -16,9 +16,11 @@ Menu.SetCreator("Your name here");
 Menu mainMenu = new Menu(new[] {"Option 1", "Option 2"}, new Action[] {method1, method2});
 ```
 
+For more details, check out the [github](https://github.com/MorningStar3600/AdvancedMenu) and/or the [wiki](https://github.com/MorningStar3600/AdvancedMenu/wiki).
+
 ## Authors
 
-- (MorningStar)[https://github.com/MorningStar3600]
+- [MorningStar](https://github.com/MorningStar3600)
 
 ## Version History
 
