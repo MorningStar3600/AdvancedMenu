@@ -1,5 +1,5 @@
 # AdvancedMenu
-Easy to use, out of the box working menu. With
+Easy to use, out of the box working menu. Available on NuGet.
 
 ## Description
 
